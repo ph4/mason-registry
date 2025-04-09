@@ -14,17 +14,22 @@ source:
   asset:
     - target: linux_arm64
       file: zk-{{version}}-linux-arm64.tar.gz
+      bin: zk
     - target: linux_x64
       file: zk-{{version}}-linux-amd64.tar.gz
+      bin: zk
     - target: linux_x86
       file: zk-{{version}}-linux-i386.tar.gz
+      bin: zk
     - target: darwin_arm64
       file: zk-{{version}}-macos-arm64.tar.gz
+      bin: zk
     - target: darwin_x64
       file: zk-{{version}}-macos-x86_64.tar.gz
-
-bin:
-  zk: zk
+      bin: zk
+    - target: win_x64
+      file: zk-{{version}}-windows_x64_86.tar.gz
+      bin: zk.exe
 
 # gzip behaves weirdly on macOS
 ci_skip:
