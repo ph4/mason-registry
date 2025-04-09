@@ -22,6 +22,8 @@ source:
       file: zk-{{version}}-macos-arm64.tar.gz
     - target: darwin_x64
       file: zk-{{version}}-macos-x86_64.tar.gz
+    - target: win_x64
+      file: zk-{{version}}-windows-x86_64.tar.gz
 
 bin:
   zk: zk
